@@ -143,6 +143,7 @@
 .social-media-links {
     display: flex;
     gap: 0.75rem;
+    margin-bottom: 100px; /*Espaçamento temporário*/
 }
 
 .social-media-links a {
