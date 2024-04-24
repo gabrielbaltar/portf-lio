@@ -85,11 +85,11 @@
 
 .content-images {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     border-radius: 8px;
     overflow: hidden;
-    width: 671px;
+    max-width: 671px;
 }
 
 .first-column {
@@ -293,3 +293,82 @@
     font-weight: 400;
     line-height: 150%;
 }
+
+@media screen and (max-width: 694px) {
+    
+    .menu-nav {
+        margin-left: 10px;
+    }
+
+    .main-content {
+        margin: 0px 20px;
+        flex-wrap: wrap;
+    }
+
+    .content-images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-bottom: 2rem;
+    }
+
+    .content-images img {
+        width: 100%;
+        border-radius: 8px;
+        max-width: 140px;
+        padding-bottom: 0.1rem;
+    }
+
+    .github-projects {
+        margin: 0px 20px;
+    }
+    
+    .cards-container {
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+
+    .social-media-links {
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+
+    .github-projects h1 {
+        font-size: 1.25rem;
+    }
+
+    .cards-container {
+        justify-content: center;
+    }
+
+    .menu-nav ul{
+        display: flex;
+        gap: 4px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .content-images img {
+        max-width: 90px;
+    }
+
+    .menu-nav ul{
+        display: flex;
+        gap: 0px;
+        
+    }
+
+    .main-container h1 {
+        font-size: 25px;
+    }
+
+    .menu-nav li a {
+        font-size: 0.875rem;
+    }
+
+} 
+
