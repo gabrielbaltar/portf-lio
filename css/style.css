@@ -329,6 +329,22 @@
 
 }
 
+@media screen and (max-width: 480px){
+
+    .content-images img {
+        max-width: 110px;
+    }
+
+    .menu-nav {
+        height: 72px;
+    }
+
+    .main-content {
+        padding-top: 1.25rem;
+    }
+
+}
+
 @media screen and (max-width: 420px) {
 
     .social-media-links {
@@ -337,7 +353,7 @@
     }
 
     .github-projects h1 {
-        font-size: 1.25rem;
+        font-size: 1.1875rem;
     }
 
     .cards-container {
