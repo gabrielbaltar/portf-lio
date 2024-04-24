@@ -9,11 +9,44 @@
     -webkit-font-smoothing: antialiased; 
     -moz-osx-font-smoothing: grayscale;
     font-display: swap;
+    background-color: var(--background-color);
+}
+
+:root {
+    --text-color-primary: #FFFFFF;
+    --menu-link-hover: #F0F0F0;
+    --text-color-secondary: #94A3B8;
+    --background-color: #ffffff;
+    --border-color: #1B2D4B;
+    --h1-blue-color: #0085FF;
+    --background-cards: #fafafa;
+
+    --text-color-primary: #FFFFFF;
+    --menu-link-hover: #111A31;
+    --text-color-secondary: #94A3B8;
+    --background-color: #0B1120;
+    --border-color: #1B2D4B;
+    --h1-blue-color: #0085FF;
+    --background-cards: #111A31;
+} 
+
+[data-theme="dark"] {
+    --text-color-primary: #FFFFFF;
+    --menu-link-hover: #111A31;
+    --text-color-secondary: #94A3B8;
+    --background-color: #0B1120;
+    --border-color: #1B2D4B;
+    --h1-blue-color: #0085FF;
+    --background-cards: #111A31;
+
+
     --text-color-primary: #222222;
     --menu-link-hover: #F0F0F0;
     --text-color-secondary: #404040;
     --background-color: #FAFAFA;
     --border-color: #E5E5E5;
+    --h1-blue-color: #0085FF;
+    --background-cards: #fafafa;
 }
 
 .menu-container {
@@ -23,9 +56,20 @@
 
 .menu-nav {
     max-width: 671px;
-    height: 3.75rem;
+    height: 69px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.menu-border {
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+
+}
+
+.light-dark-mode-icon a{
+    margin-right: 0.5rem;
 }
 
 .menu-nav ul{
@@ -62,16 +106,17 @@
 }
 
 .main-content h1 {
-    font-size: 2rem;
+    font-size: 24px;
     color: var(--text-color-primary);
+    text-transform: lowercase;
     padding-bottom: 1.5rem;
 }
 
 .main-content span{
-    background: linear-gradient(to right, rgb(59, 2, 179, 1), rgb(46, 140, 209, 1));
+    /*background: linear-gradient(to right, rgb(59, 2, 179, 1), rgb(46, 140, 209, 1));
     -webkit-background-clip: text; /* Aplica o gradiente ao texto para WebKit */
-    background-clip: text; /* Aplica o gradiente ao texto */
-    color: transparent;
+    /*background-clip: text; /* Aplica o gradiente ao texto */
+    color: var(--h1-blue-color);
     margin-right: 12px;
 }
 
@@ -153,7 +198,7 @@
 }
 
 .linkedin a{
-    background-color: var(--background-color);
+    background-color: var(--background-cards);
     padding: 5px;
     display: flex;
     align-items: center;
@@ -164,7 +209,7 @@
 }
 
 .github a{
-    background-color: var(--background-color);
+    background-color: var(--background-cards);
     padding: 5px;
     display: flex;
     align-items: center;
@@ -175,7 +220,7 @@
 }
 
 .spotify a {
-    background-color: var(--background-color);
+    background-color: var(--background-cards);
     padding: 5px;
     display: flex;
     align-items: center;
@@ -186,7 +231,7 @@
 }
 
 .instagram a {
-    background-color: var(--background-color);
+    background-color: var(--background-cards);
     padding: 5px;
     display: flex;
     align-items: center;
@@ -214,7 +259,6 @@
 }
 
 .ver-todos-projetos-link a {
-    background-color: var(--background-color);
     padding: 5px 8px;
     display: flex;
     align-items: center;
@@ -234,10 +278,10 @@
 }
 
 .git-hub-link span {
-    background: linear-gradient(to right, rgb(59, 2, 179, 1), rgb(46, 140, 209, 1));
+    /*background: linear-gradient(to right, rgb(59, 2, 179, 1), rgb(46, 140, 209, 1));
     -webkit-background-clip: text; /* Aplica o gradiente ao texto para WebKit */
-    background-clip: text; /* Aplica o gradiente ao texto */
-    color: transparent;
+    /*background-clip: text; /* Aplica o gradiente ao texto */
+    color: var(--h1-blue-color);
 }
 
 .github-projects p {
@@ -263,19 +307,39 @@
     width: 327px;
     justify-content: space-between;
     padding: 18px 24px;
-    background: var(--menu-link-hover);
     border-radius: 4px;
     border: 1px solid var(--border-color);
+    background-color: var(--background-cards);
 }
 
+.github-cards a {
+    background-color: var(--background-cards);
+}
+
+.github-title-icon {
+    background-color: var(--background-cards);
+}
+
+.link-externo-icon {
+    background-color: var(--background-cards);
+    
+}
+
+.link-externo-icon a img{
+    background-color: var(--background-cards);
+}
+ 
 .github-title-icon img {
     margin-bottom: 6px;
+    background-color: var(--background-cards);
+
 }
 
 .github-title-icon p {
     font-size: 0.875rem;
     color: var(--text-color-primary);
     font-weight: 400;
+    background-color: var(--background-cards);
 }
 
 .footer-container {
@@ -289,7 +353,7 @@
 
 .paragraph-content p {
     font-size: 0.875rem;
-    color: var(--text-color-primary);
+    color: var(--text-color-secondary);
     font-weight: 400;
     line-height: 150%;
 }
