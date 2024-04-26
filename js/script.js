@@ -16,7 +16,9 @@ htmlBody.addEventListener("click", () => {
     const externalLinkIcon = document.querySelectorAll(".external-link-change-mode img");
     const piukaLogo = document.getElementById("piuka-logo");
     const deloitteLogo = document.getElementById("deloitte-icon");
-    
+    const githubSmallIcon = document.getElementById("github-small-icon");
+    console.log(githubSmallIcon);
+
     if(body.getAttribute("data-theme") === "dark") {
         body.removeAttribute("data-theme", "light");
         themeIcon.src = "./img/to-light-mode.svg";
@@ -25,6 +27,8 @@ htmlBody.addEventListener("click", () => {
         piukaLogo.src = "./img/white-piuka-logo.svg"
         menuIconMobile.src = "./img/menu-icon-dark-mode.svg";
         deloitteLogo.src = "./img/white-deloitte-logo.svg";
+        githubSmallIcon.src = "./img/github-small-icon.svg";
+
         githubIcon.forEach(icon => {
             icon.src = "./img/white-github-icon.svg";
         });
@@ -41,6 +45,7 @@ htmlBody.addEventListener("click", () => {
         piukaLogo.src = "./img/piuka.svg"
         menuIconMobile.src = "./img/menu-icon-light-mode.svg";
         deloitteLogo.src = "./img/deloitte.svg";
+        githubSmallIcon.src = "./img/github.svg";
 
         githubIcon.forEach(icon => {
             icon.src = "./img/github2.svg";
