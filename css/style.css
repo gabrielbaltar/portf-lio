@@ -83,7 +83,7 @@
     color: var(--text-color-primary);
     flex-wrap: wrap;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 0.875rem;
     padding: 5px 10px;
     border-radius: 4px;
     transition: 0.3s;
