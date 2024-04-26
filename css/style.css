@@ -406,6 +406,11 @@
         justify-content: center;
     }
 
+    .github-cards {
+        width: 100%;
+    
+    }
+
 }
 
 @media screen and (max-width: 550px){
@@ -418,6 +423,8 @@
     .nav-links li{
         display: none;
     }
+    
+    
 
 }
 
