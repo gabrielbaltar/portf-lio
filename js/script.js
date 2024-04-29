@@ -19,7 +19,7 @@ htmlBody.addEventListener("click", () => {
     const piukaLogo = document.getElementById("piuka-logo");
     const deloitteLogo = document.getElementById("deloitte-icon");
     const githubSmallIcon = document.getElementById("github-small-icon");
-    console.log(githubSmallIcon);
+    
 
     if(body.getAttribute("data-theme") === "dark") {
         body.removeAttribute("data-theme", "light");
