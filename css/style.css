@@ -112,10 +112,30 @@
 }
 
 .main-content h1 {
-    font-size: 24px;
+    font-size: 32px;
     color: var(--text-color-primary);
     text-transform: lowercase;
     padding-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+#icon-loop {
+    animation: wave 2s infinite linear;
+    display: inline-block;
+}
+
+@keyframes wave {
+    
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-10deg);
+    }
+    75% {
+        transform: rotate(10deg);
+    }
+
 }
 
 .main-content span{

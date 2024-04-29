@@ -23,7 +23,7 @@ htmlBody.addEventListener("click", () => {
         body.removeAttribute("data-theme", "light");
         themeIcon.src = "./img/to-light-mode.svg";
         whiteArrow.src = "./img/white-arrow.svg";
-        whiteArrow2.src = "./img/white-arrow-two.svg";
+        //whiteArrow2.src = "./img/white-arrow-two.svg";
         piukaLogo.src = "./img/white-piuka-logo.svg"
         menuIconMobile.src = "./img/menu-icon-dark-mode.svg";
         deloitteLogo.src = "./img/white-deloitte-logo.svg";
@@ -41,7 +41,7 @@ htmlBody.addEventListener("click", () => {
         body.setAttribute("data-theme", "dark");
         themeIcon.src = "./img/to-dark-mode.svg";
         whiteArrow.src = "./img/arrow.svg";
-        whiteArrow2.src = "./img/arrow-two.svg";
+        //whiteArrow2.src = "./img/arrow-two.svg";
         piukaLogo.src = "./img/piuka.svg"
         menuIconMobile.src = "./img/menu-icon-light-mode.svg";
         deloitteLogo.src = "./img/deloitte.svg";
