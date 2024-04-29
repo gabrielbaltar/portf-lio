@@ -5,6 +5,8 @@ const htmlBody = document.querySelector(".light-dark-mode-icon");
 
 htmlBody.addEventListener("click", () => {
 
+    const menuMobile = document.querySelector(".menu-mobile");
+
     const body = document.body;
     const themeIcon = document.getElementById("change-icon-mode");
     const whiteArrow = document.getElementById("white-arrow");
@@ -55,5 +57,18 @@ htmlBody.addEventListener("click", () => {
             icon.src = "./img/externallink.svg";
         });
     }
+
+    menuMobile.classList.remove("menu-mobile-visible");
+
+});
+
+// Função menu mobile 
+
+const menuIcon = document.querySelector(".menu-mobile-icon");
+
+menuIcon.addEventListener("click", () =>{
+
+    const menuMobile = document.querySelector(".menu-mobile");
+    menuMobile.classList.toggle("menu-mobile-visible");
 
 });
