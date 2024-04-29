@@ -142,8 +142,8 @@
 
     background-color: var(--background-cards);
     position: absolute;
-    height: 196px;
-    width: 146px;
+    height: 230px;
+    width: 170px;
     color: var(--text-color-primary);
     top: 58px;
     left: 20px;
@@ -164,7 +164,7 @@
 }
 
 .menu-mobile ul{
-    font-size: 0.875rem;
+    font-size: 1rem;
     font-weight: 500;
     display: flex;
     flex-direction: column;
@@ -533,7 +533,7 @@
     }
 
     .menu-mobile ul{
-        font-size: 0.875rem;
+        font-size: 1rem;
         font-weight: 500;
         display: flex;
         flex-direction: column;
@@ -567,7 +567,7 @@
     }
 
     .menu-mobile ul{
-        font-size: 0.875rem;
+        font-size: 1rem;
         font-weight: 500;
         display: flex;
         flex-direction: column;

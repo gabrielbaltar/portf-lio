@@ -85,3 +85,17 @@ window.addEventListener("resize", () => {
     }
 
 });
+
+// Função para fechar o menu mobile se clicar em algum lugar fora dele
+
+document.addEventListener("click", (event) => {
+
+    const menuComplete = document.querySelector(".menu-mobile");
+    const menuIconMobile = document.querySelector(".menu-mobile-icon ");
+
+    if(menuComplete.classList.contains("menu-mobile-visible") && !menuIconMobile.contains(event.target)){
+
+        menuComplete.classList.remove("menu-mobile-visible");
+        
+    }
+});
