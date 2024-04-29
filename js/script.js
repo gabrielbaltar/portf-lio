@@ -62,7 +62,9 @@ htmlBody.addEventListener("click", () => {
 
 });
 
-// Função menu mobile 
+// Função para abrir e fechar o menu mobile 
+
+let menuButtonClicked = false;
 
 const menuIcon = document.querySelector(".menu-mobile-icon");
 
@@ -70,5 +72,16 @@ menuIcon.addEventListener("click", () =>{
 
     const menuMobile = document.querySelector(".menu-mobile");
     menuMobile.classList.toggle("menu-mobile-visible");
+
+});
+
+// Função para fechar o menu mobile se aumentar a tela a partir de 550px
+
+window.addEventListener("resize", () => {
+
+    const menuMobile = document.querySelector(".menu-mobile");
+    if(window.innerWidth > 550 && !menuButtonClicked) {
+        menuMobile.classList.remove("menu-mobile-visible");
+    }
 
 });
