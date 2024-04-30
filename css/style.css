@@ -114,9 +114,13 @@
 .main-content h1 {
     font-size: 32px;
     color: var(--text-color-primary);
-    text-transform: lowercase;
+    text-transform: none;
     padding-bottom: 1.5rem;
     font-weight: 600;
+}
+
+#minha-experiencia {
+    text-transform: none;
 }
 
 #icon-loop {
@@ -263,6 +267,7 @@
     display: flex;
     gap: 0.75rem;
     margin-bottom: 56px;
+    
 }
 
 .social-media-links a {
@@ -436,6 +441,7 @@
     align-items: center;
     height: 60px;
     border-top: 1px solid var(--border-color);
+    
 }
 
 .paragraph-content p {
@@ -444,6 +450,24 @@
     font-weight: 400;
     line-height: 150%;
 }
+
+.empresas {
+    padding-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.empresas h2 {
+    color: var(--text-color-primary);
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+#periodo-trabalhado {
+    color: var(--text-color-secondary);
+    font-size: 0.875rem;
+} 
 
 @media screen and (max-width: 694px) {
     
