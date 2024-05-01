@@ -13,7 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/experiencia.css">
-    <title>Experiência - Gabriel Baltar Pereira</title>
+    <link rel="stylesheet" href="./css/contato.css">
+    <title>Sobre - Gabriel Baltar Pereira</title>
 </head>
 <body>
 
@@ -48,45 +49,53 @@
 
     <main class="main-container">
         <div class="main-content">
-            <h1 id="minha-experiencia">Minha experiência</h1>
+            <h1 id="minha-experiencia">Contato</h1>
             <p>
-                Como Desenvolvedor Web Front-end e UI Designer, meu objetivo é construir experiências visuais que não só encantam, mas
-                também são plenamente acessíveis. Busco harmonizar estética e funcionalidade para criar interfaces que ofereçam uma
-                interação intuitiva e inclusiva. Aqui você pode visualizar minha experiência profissional:
+                Estou sempre interessado em discutir novos projetos, oportunidades criativas ou parcerias. Não hesite em enviar uma
+                mensagem usando o formulário abaixo ou por e-mail diretamente em <span id="link-email">gabriel.baltar21@hotmail.com</span>. Prometo responder assim
+                que possível!
             </p>
 
-            <div class="empresas">
-                <h2>Infobase IInterativa</h2>
-                <p>UX/UI Designer Pleno</p>
+            <div class="social-media-links ">
+                <div class="linkedin">
+                    <a href="https://www.linkedin.com/in/gabriel-baltar-pereira/" target="_blank" rel="noopener noreferrer">
+                        <img src="./img/linkedin.svg" alt="Ícone do LinkedIn">LinkedIn
+                    </a>
+                </div>
+                <div class="github">
+                    <a href="https://github.com/gabrielbaltar" target="_blank" rel="noopener noreferrer">
+                        <img src="./img/github-small-icon.svg" alt="Ícone do Github" id="github-small-icon">Github
+                    </a>
+                </div>
+                <div class="spotify">
+                    <a href="https://open.spotify.com/user/gabriel.baltar?si=b8d678cd6f1f4948" target="_blank" rel="noopener noreferrer">
+                        <img src="./img/spotify.svg" alt="Ícone do Spotify">Spotify
+                    </a>
+                </div>
+                <div class="instagram">
+                    <a href="https://www.instagram.com/gbbaltar/" target="_blank" rel="noopener noreferrer">
+                        <img src="./img/instagram.svg" alt="Ícone do Instagram">Instagram
+                    </a>
+                </div>
             </div>
-            
-            <p>
-                Meu dia a dia é dinâmico e colaborativo. Iniciamos os projetos com uma fase intensa de pesquisa, onde mergulhamos nas
-                necessidades dos usuários e nas particularidades do setor de cada cliente. Seguindo os princípios do design thinking,
-                conduzimos workshops de ideação para esboçar soluções inovadoras. A fase de prototipação é especialmente gratificante,
-                pois é quando transformamos ideias abstratas em interfaces concretas, acessíveis e inclusivas.
-            </p>
-            <p>
-                Cada projeto é uma nova oportunidade para aplicar e expandir meu conhecimento em design acessível, garantindo que as
-                soluções não apenas atendam aos requisitos visuais e funcionais, mas também promovam uma experiência inclusiva para
-                todos os usuários. Este compromisso com a acessibilidade está no cerne de nosso processo de design, refletindo nossa
-                dedicação a criar produtos que não só pareçam bons, mas que também sejam universalmente utilizáveis.
-            </p>
-            
-            <span id="periodo-trabalhado">Período: Jan 2021 - Até o momento</span>
 
-            <div class="empresas segundo-paragrafo">
-                <h2>RS Soluções Consultoria</h2>
-                <p>Estágio em Desenvolvimento Web</p>
+            <div class="form-container">
+                <form class="my-form" action="#">
+                    <div class="name">
+                        <label for="userName">Nome</label>
+                        <input placeholder="Digite seu nome" type="text" name="name" id="userName" required>
+                    </div>
+                    <div class="name">
+                        <label for="userEmail">Email</label>
+                        <input placeholder="bjarne@cplusplus.com" type="email" name="email" id="userEmail" required>
+                    </div>
+                    <div class="name message">
+                        <label for="message">Mensagem</label>
+                        <textarea name="message" id="message" required></textarea>
+                    </div>
+                    <button>Enviar</button>
+                </form>
             </div>
-            
-            <p>
-                Durante meu estágio na RS Soluções Consultoria, contribuí ativamente em diversos projetos internos, incluindo o
-                desenvolvimento de uma calculadora personalizada para a equipe de empréstimo consignado, a criação do site institucional
-                da empresa e o desenvolvimento de uma intranet para otimizar a comunicação entre os times.
-            </p>
-            
-            <span id="periodo-trabalhado">Período: Fev 2019 - Ago 2019</span>
         </div>
     </main>
 

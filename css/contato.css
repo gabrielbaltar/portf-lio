@@ -1,0 +1,139 @@
+.form-container{
+    display: flex;
+    max-width: 671px;
+    height: 514px;
+    background-color: var(--background-cards);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    justify-content: center;
+}
+
+.main-content span {
+    color: var(--text-color-primary);
+    margin: 0px;
+    text-decoration: underline;
+}
+
+.my-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    gap: 1.5rem;
+    background-color: var(--background-cards);
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    width: 543px;
+    background-color: var(--background-cards);
+}
+
+.name label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    letter-spacing: 0.2px;
+    color: var(--text-color-primary);
+    margin-bottom: 8px;
+    background-color: var(--background-cards);
+}
+
+.name input {
+    background-color: var(--form-white-input-background);
+    border: 1px solid var(--background-color);
+    
+    height: 46px;
+    border-radius: 4px;
+    padding-left: 1rem;
+    color: var(--text-color-primary);
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: border-color 0.3s;
+    outline: none;
+}
+
+.name input:hover {
+    border: 1px solid var(--border-color);
+}
+
+.name input:focus {
+    border: 1px solid var(--border-color);
+}
+
+.name input::placeholder {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    letter-spacing: 0.2px;
+    color: var(--text-color-secondary);
+}
+
+.name.message textarea {
+    border: 1px solid var(--background-color);
+    background-color: var(--form-white-input-background);
+    height: 106px;
+    max-width: 543px;
+    border-radius: 4px;
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+    color: var(--text-color-primary);
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: normal;
+    overflow: auto;
+    resize: none;
+    outline: none;
+}
+
+.name.message textarea:hover {
+    border: 1px solid var(--border-color);
+}
+
+.name.message textarea:focus {
+    border: 1px solid var(--border-color);
+}
+
+.my-form button {
+    width: 155px;
+    height: 44px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--text-color-primary);
+    color: var(--text-color-font-button);
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 640px){
+
+    .my-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 543px;
+        margin: 0px 1.25rem;
+        gap: 1.5rem;
+        background-color: var(--background-cards);
+    }
+
+    .name {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--background-cards);
+    }
+
+}
+
+@media screen and (max-width: 410px){
+
+   .my-form button {
+        width: 100%;
+   }
+
+}

@@ -29,6 +29,9 @@
     --border-color: #1B2D4B;
     --h1-blue-color: #0085FF;
     --background-cards: #111A31;
+    --text-color-font-button: #222222;
+    --form-white-input-background: #0B1120;
+    
 } 
 
 [data-theme="dark"] {
@@ -39,8 +42,8 @@
     --border-color: #1B2D4B;
     --h1-blue-color: #0085FF;
     --background-cards: #111A31;
-
-
+    --form-white-input-background: #EFEFEF;
+    --text-color-font-button: #ffffff;
     --text-color-primary: #222222;
     --menu-link-hover: #F0F0F0;
     --background-cards: #FAFAFA;
