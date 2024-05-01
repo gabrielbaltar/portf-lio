@@ -36,15 +36,19 @@
 
         <div class="menu-mobile">
             <ul>
-                <li><a href="https://www.facebook.com/gabriel.baltar.39/" target="_blank" rel="noopener noreferrer">Home</a></li>
-                <li><a href="#" target="_blank" rel="noopener noreferrer">Experiência</a></li>
-                <li><a href="#" target="_blank" rel="noopener noreferrer">Projetos</a></li>
-                <li><a href="#" target="_blank" rel="noopener noreferrer">Contato</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="experiencia.html">Experiência</a></li>
+                <li><a href="https://github.com/gabrielbaltar?tab=repositories">Projetos</a></li>
+                <li><a href="sobre.html">Contato</a></li>
             </ul>
         </div>
     </nav>
     <div class="menu-border">
 
+    </div>
+
+    <div class="feedback-success" id="success-message">
+        <img src="./img/mensagem-enviada.svg" alt="Feedback de mensagem enviada">
     </div>
 
     <main class="main-container">
@@ -80,7 +84,7 @@
             </div>
 
             <div class="form-container">
-                <form class="my-form" action="#">
+                <form id="form-contato" class="my-form" action="#">
                     <div class="name">
                         <label for="userName">Nome</label>
                         <input placeholder="Digite seu nome" type="text" name="name" id="userName" required>
@@ -93,14 +97,11 @@
                         <label for="message">Mensagem</label>
                         <textarea name="message" id="message" required></textarea>
                     </div>
-                    <button>Enviar</button>
+                    <button type="submit">Enviar</button>
                 </form>
             </div>
         </div>
     </main>
-
-    
-
 
     
 
@@ -110,6 +111,13 @@
         </div>
     </footer>
     
+    
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("q77sMIK9f29XKPTyQ"); // Substitua 'user_ID' pelo seu User ID fornecido pelo EmailJS
+        })();
+    </script>
     <script src="./js/script.js"></script>
 </body>
 </html>

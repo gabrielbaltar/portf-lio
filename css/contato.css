@@ -6,12 +6,12 @@
     border: 1px solid var(--border-color);
     border-radius: 4px;
     justify-content: center;
+    position: relative;
 }
 
 .main-content span {
     color: var(--text-color-primary);
     margin: 0px;
-    text-decoration: underline;
 }
 
 .my-form {
@@ -108,6 +108,28 @@
     cursor: pointer;
 }
 
+.feedback-success {
+    position: absolute;
+    z-index: 1000;
+    top: 18%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta o posicionamento exato */
+    background-color: transparent;
+    opacity: 0;  
+    transition: opacity 0.5s ease-in-out;  
+    pointer-events: none; 
+}
+
+.feedback-success.visible {
+    opacity: 1;
+}
+
+.feedback-success img {
+    
+    background: none !important;  /* Remove qualquer background que possa ter sido herdado */
+
+}
+
 @media screen and (max-width: 640px){
 
     .my-form {
@@ -130,10 +152,15 @@
 
 }
 
-@media screen and (max-width: 410px){
+@media screen and (max-width: 430px){
 
    .my-form button {
         width: 100%;
    }
+
+   .feedback-success img {
+        background: none !important;  /* Remove qualquer background que possa ter sido herdado */
+        width: 315px;
+    }
 
 }
