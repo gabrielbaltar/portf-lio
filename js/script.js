@@ -12,6 +12,7 @@ htmlBody.addEventListener("click", () => {
     const whiteArrow = document.getElementById("white-arrow");
     const whiteArrow2 = document.getElementById("white-arrow-two");
     const menuIconMobile = document.getElementById("menu-icon-mobile");
+    const menuIconMobile2 = document.getElementById("menu-icon-mobile2");
     const currentTheme = document.body.getAttribute("data-theme");
     const externalLink = document.getElementById("external-link");
     const githubIcon = document.querySelectorAll(".github-dark-mode-change img");
@@ -19,7 +20,6 @@ htmlBody.addEventListener("click", () => {
     const piukaLogo = document.getElementById("piuka-logo");
     const deloitteLogo = document.getElementById("deloitte-icon");
     const githubSmallIcon = document.getElementById("github-small-icon");
-    
 
     if(body.getAttribute("data-theme") === "dark") {
         body.removeAttribute("data-theme", "light");
@@ -43,7 +43,6 @@ htmlBody.addEventListener("click", () => {
         body.setAttribute("data-theme", "dark");
         themeIcon.src = "./img/to-dark-mode.svg";
         whiteArrow.src = "./img/arrow.svg";
-        //whiteArrow2.src = "./img/arrow-two.svg";
         piukaLogo.src = "./img/piuka.svg"
         menuIconMobile.src = "./img/menu-icon-light-mode.svg";
         deloitteLogo.src = "./img/deloitte.svg";
@@ -109,11 +108,12 @@ document.getElementById('form-contato').addEventListener('submit', function(even
       .then(function() {
 
         const successIcon = document.querySelector(".feedback-success");
-        console.log(successIcon);
+        
         successIcon.classList.add("visible");
+        
         document.getElementById('form-contato').reset();
 
-        setTimeout( () => {
+        setTimeout( function() {
             successIcon.classList.remove('visible');
         }, 3000);
 

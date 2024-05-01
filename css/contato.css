@@ -111,7 +111,7 @@
 .feedback-success {
     position: absolute;
     z-index: 1000;
-    top: 18%; /* Centraliza verticalmente */
+    top: 50%; /* Centraliza verticalmente */
     left: 50%; /* Centraliza horizontalmente */
     transform: translate(-50%, -50%); /* Ajusta o posicionamento exato */
     background-color: transparent;
