@@ -11,8 +11,6 @@ htmlBody3.addEventListener("click", () => {
     const themeIcon = document.getElementById("change-icon-mode");
     const menuIconMobile2 = document.getElementById("menu-icon-mobile-experiencia");
 
-    console.log(menuIconMobile2);
-
     if(body.getAttribute("data-theme") === "dark") {
         body.removeAttribute("data-theme", "light");
         

@@ -99,26 +99,5 @@ document.addEventListener("click", (event) => {
     }
 });
 
-// Configuraçao do EmailJS 
 
-document.getElementById('form-contato').addEventListener('submit', function(event) {
-    event.preventDefault(); // Previne o comportamento padrão do formulário
-  
-    emailjs.sendForm('service_84c3mrn', 'template_7sz7guv', this)
-      .then(function() {
-
-        const successIcon = document.querySelector(".feedback-success");
-        
-        successIcon.classList.add("visible");
-        
-        document.getElementById('form-contato').reset();
-
-        setTimeout( function() {
-            successIcon.classList.remove('visible');
-        }, 3000);
-
-      }, function(error) {
-        alert('Falha ao enviar mensagem: ' + JSON.stringify(error));
-      });
-  });
   
