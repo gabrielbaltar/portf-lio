@@ -1,4 +1,4 @@
-// Adicionando Dark mode no Portfólio 
+//Adicionando Dark mode no Portfólio 
 
 const htmlBody = document.querySelector(".light-dark-mode-icon");
 

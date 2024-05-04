@@ -1,7 +1,7 @@
-const htmlBody = document.querySelector(".light-dark-mode-icon");
+const htmlBody2 = document.querySelector(".light-dark-mode-icon");
 
 
-htmlBody.addEventListener("click", () => {
+htmlBody2.addEventListener("click", () => {
 
     const menuMobile = document.querySelector(".menu-mobile");
 
@@ -33,11 +33,11 @@ htmlBody.addEventListener("click", () => {
 
 // Função para abrir e fechar o menu mobile 
 
-let menuButtonClicked = false;
+let menuButtonClicked2 = false;
 
-const menuIcon = document.querySelector(".menu-mobile-icon");
+const menuIcon2 = document.querySelector(".menu-mobile-icon");
 
-menuIcon.addEventListener("click", () =>{
+menuIcon2.addEventListener("click", () =>{
 
     const menuMobile = document.querySelector(".menu-mobile");
     menuMobile.classList.toggle("menu-mobile-visible");
@@ -67,4 +67,4 @@ document.addEventListener("click", (event) => {
         menuComplete.classList.remove("menu-mobile-visible");
         
     }
-});
+}); 
