@@ -112,6 +112,7 @@
     max-width: 671px;
     margin: 0 auto;
     padding-top: 2rem;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .main-content h1 {
@@ -528,7 +529,16 @@
 #periodo-trabalhado {
     color: var(--text-color-secondary);
     font-size: 0.875rem;
-} 
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; transform: translateY(40px);
+    }
+    to {
+        opacity: 1; transform: translateY(0);
+    }
+}
 
 @media screen and (max-width: 694px) {
     
@@ -652,6 +662,11 @@
         color: var(--text-color-primary);
         font-size: 0.875rem;
     }
+
+    .link-externo-icon img {
+        background-color: var(--background-color);
+    }
+
 }
 
 

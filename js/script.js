@@ -68,7 +68,7 @@ let menuButtonClicked = false;
 
 const menuIcon = document.querySelector(".menu-mobile-icon");
 
-menuIcon.addEventListener("click", () =>{
+menuIcon.addEventListener("click", () => {
 
     const menuMobile = document.querySelector(".menu-mobile");
     menuMobile.classList.toggle("menu-mobile-visible");
