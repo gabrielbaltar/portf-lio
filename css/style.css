@@ -634,6 +634,24 @@
     .github-title-icon img {
         max-width: 100%;
     }
+
+    .link-externo-icon {
+        width: 100%;
+        
+    }
+
+    .link-externo-icon a{
+        display: flex;
+        gap: 0.5rem;
+        padding: 16px 0px;
+        border-radius: 8px;
+        border: 1px solid var(--border-color);
+        background-color: var(--background-color);
+        align-items: center;
+        justify-content: center;
+        color: var(--text-color-primary);
+        font-size: 0.875rem;
+    }
 }
 
 
