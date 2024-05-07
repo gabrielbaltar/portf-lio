@@ -2,6 +2,19 @@
 
 const htmlBody = document.querySelector(".light-dark-mode-icon");
 
+document.addEventListener("DOMContentLoaded", () => {
+
+    applyThemeOnLoad();
+
+    const themeToggleButton = document.querySelector(".light-dark-mode-icon");
+    if(themeToggleButton) {
+        themeToggleButton.addEventListener("click", () => {
+            toggleTheme();
+        });
+    }
+
+    
+});
 
 htmlBody.addEventListener("click", () => {
 
@@ -21,10 +34,11 @@ htmlBody.addEventListener("click", () => {
     //const deloitteLogo = document.getElementById("deloitte-icon");
     const githubSmallIcon = document.getElementById("github-small-icon");
 
-
-    if(body.getAttribute("data-theme") === "dark") {
-        body.removeAttribute("data-theme", "light");
+    if(currentTheme === "dark") {
+        body.setAttribute("data-theme", "light");
         themeIcon.src = "./img/to-light-mode.svg";
+
+        //themeIcon.src = "./img/to-light-mode.svg";
         whiteArrow.src = "./img/white-arrow.svg";
         //whiteArrow2.src = "./img/white-arrow-two.svg";
         //piukaLogo.src = "./img/white-piuka-logo.svg"
@@ -42,6 +56,7 @@ htmlBody.addEventListener("click", () => {
 
     }else {
         body.setAttribute("data-theme", "dark");
+
         themeIcon.src = "./img/to-dark-mode.svg";
         whiteArrow.src = "./img/arrow.svg";
         //piukaLogo.src = "./img/piuka.svg"
@@ -56,11 +71,53 @@ htmlBody.addEventListener("click", () => {
         externalLinkIcon.forEach(icon => {
             icon.src = "./img/externallink.svg";
         });
+
     }
 
     menuMobile.classList.remove("menu-mobile-visible");
 
+
+    //Salvando o tema no local storage
+    localStorage.setItem("theme", body.getAttribute("data-theme"));
+
 });
+
+// Função para trocar o tema
+
+function toggleTheme() {
+
+    const body = document.body;
+    const currentTheme = body.getAttribute("data-theme");
+    //const newTheme = currentTheme === "dark" ? "light" : "dark";
+    
+    body.setAttribute("data-theme", newTheme);
+    updateIconMode(newTheme);
+}
+
+// Função para manter o tema salvo no local storage
+function applyThemeOnLoad(){
+    const savedTheme = localStorage.getItem("theme") || "dark";
+    const body = document.body;
+    const themeIcon = document.getElementById("change-icon-mode");
+
+    if(savedTheme){
+        body.setAttribute("data-theme", savedTheme);
+        updateIconMode(savedTheme); 
+    }
+}
+
+// Função para trocar o ícone do tema ao mudar de página sem clicar no botão de mudar tema
+
+function updateIconMode(theme) {
+
+    const themeIcon = document.getElementById("change-icon-mode");
+    
+    if(themeIcon) {
+        themeIcon.src = theme === "dark" ? "./img/to-dark-mode.svg" : "./img/to-light-mode.svg";
+    }
+
+};
+
 
 // Função para abrir e fechar o menu mobile 
 
@@ -101,4 +158,3 @@ document.addEventListener("click", (event) => {
 });
 
 
-  
