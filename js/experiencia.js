@@ -14,6 +14,10 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+    // Função para trocar o ícone do tema ao mudar de página sem clicar no botão de mudar tema
+    const menuIconMobile = document.querySelector(".menu-mobile-icon");
+    console.log(menuIconMobile);
+
 });
 
 htmlBody3.addEventListener("click", () => {
@@ -74,6 +78,18 @@ function applyThemeOnLoad(){
 function updateIconMode(theme) {
 
     const themeIcon = document.getElementById("change-icon-mode");
+
+    // Função para trocar o ícone do tema ao mudar de página sem clicar no botão de mudar tema
+    const menuIconMobile = document.getElementById("menu-icon-mobile-experiencia");
+
+    if(theme === "dark") {
+        
+        menuIconMobile.src = "./img/menu-icon-light-mode.svg";
+    }
+    else {
+        menuIconMobile.src = "./img/menu-icon-dark-mode.svg";
+
+    }
     
     if(themeIcon) {
         themeIcon.src = theme === "dark" ? "./img/to-dark-mode.svg" : "./img/to-light-mode.svg";

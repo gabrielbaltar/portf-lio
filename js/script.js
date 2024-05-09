@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     applyThemeOnLoad();
 
     const themeToggleButton = document.querySelector(".light-dark-mode-icon");
+    
     if(themeToggleButton) {
         themeToggleButton.addEventListener("click", () => {
             toggleTheme();
@@ -96,13 +97,19 @@ function toggleTheme() {
 
 // Função para manter o tema salvo no local storage
 function applyThemeOnLoad(){
+    
     const savedTheme = localStorage.getItem("theme") || "dark";
+
     const body = document.body;
+
     const themeIcon = document.getElementById("change-icon-mode");
 
     if(savedTheme){
+        
         body.setAttribute("data-theme", savedTheme);
+
         updateIconMode(savedTheme); 
+
     }
 }
 
@@ -112,9 +119,23 @@ function updateIconMode(theme) {
 
     const themeIcon = document.getElementById("change-icon-mode");
     
+    // Função para trocar o ícone do tema ao mudar de página sem clicar no botão de mudar tema
+    const menuIconMobile = document.getElementById("menu-icon-mobile");
+
+    if(theme === "dark") {
+        
+        menuIconMobile.src = "./img/menu-icon-light-mode.svg";
+    }
+    else {
+        menuIconMobile.src = "./img/menu-icon-dark-mode.svg";
+
+    }
+
     if(themeIcon) {
         themeIcon.src = theme === "dark" ? "./img/to-dark-mode.svg" : "./img/to-light-mode.svg";
     }
+
+    
 
 };
 
@@ -148,7 +169,6 @@ window.addEventListener("resize", () => {
 document.addEventListener("click", (event) => {
 
     const menuComplete = document.querySelector(".menu-mobile");
-    const menuIconMobile = document.querySelector(".menu-mobile-icon ");
 
     if(menuComplete.classList.contains("menu-mobile-visible") && !menuIconMobile.contains(event.target)){
 
