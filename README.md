@@ -8,32 +8,18 @@
 
 ## Sobre o Projeto
 
-Este projeto é um portfólio que apresenta meus trabalhos e experiências como desenvolvedor de software.
+Este projeto serve como uma vitrine de minha jornada e conquistas como Desenvolvedor de Software e Designer de UI. Ele abrange uma gama diversificada de trabalhos que demonstram tanto minha habilidade técnica quanto criatividade. Além disso, inclui detalhes de contato e um formulário interativo habilitado com EmailJS para facilitar a comunicação.
 
 ## Tecnologias Utilizadas
 
-- Tecnologia 1
-- Tecnologia 2
-- Tecnologia 3
-
-* [![HTML 5][HTML 5]][]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-
-## Características
-
-- Característica 1
-- Característica 2
-- Característica 3
-
-## Como Executar o Projeto
-
-Aqui estão as instruções de como executar o projeto...
+- HTML 5
+- CSS 3
+- JavaScript
 
 ## Contato
 
-Seu Nome - Seu Email - Seu LinkedIn/Website
+gabriel.baltar21@hotmail.com 
 
-## Licença
+## Link de acesso
 
-Este projeto está sob a licença XYZ...
+[Acessar site](https://www.gabrielbaltar.com.br/)
