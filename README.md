@@ -16,6 +16,10 @@ Este projeto é um portfólio que apresenta meus trabalhos e experiências como 
 - Tecnologia 2
 - Tecnologia 3
 
+* [![HTML 5][HTML 5]][]
+* [![React][React.js]][React-url]
+* [![Vue][Vue.js]][Vue-url]
+
 ## Características
 
 - Característica 1
