@@ -121,21 +121,32 @@ function updateIconMode(theme) {
     
     // Função para trocar o ícone do tema ao mudar de página sem clicar no botão de mudar tema
     const menuIconMobile = document.getElementById("menu-icon-mobile");
+    const whiteArrow = document.getElementById("white-arrow");
+    const externalLinkIcon = document.querySelectorAll(".external-link-change-mode img");
 
     if(theme === "dark") {
         
         menuIconMobile.src = "./img/menu-icon-light-mode.svg";
+        whiteArrow.src = "./img/arrow.svg";
+
+        externalLinkIcon.forEach(icon => {
+            icon.src = "./img/externallink.svg";
+        });
     }
     else {
+
         menuIconMobile.src = "./img/menu-icon-dark-mode.svg";
+        whiteArrow.src = "./img/white-arrow.svg";
+
+        externalLinkIcon.forEach(icon => {
+            icon.src = "./img/white-external-link.svg";
+        });
 
     }
 
     if(themeIcon) {
         themeIcon.src = theme === "dark" ? "./img/to-dark-mode.svg" : "./img/to-light-mode.svg";
     }
-
-    
 
 };
 
