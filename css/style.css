@@ -5,12 +5,20 @@
     list-style: none;
     text-decoration: none;
     font-family: 'Inter', sans-serif;
-    text-rendering: optimizeLegibility;
+    text-rendering:optimizeLegibility;
     -webkit-font-smoothing: antialiased; 
     -moz-osx-font-smoothing: grayscale;
     font-display: swap;
     background-color: var(--background-color);
     transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
 }
 
 :root {
